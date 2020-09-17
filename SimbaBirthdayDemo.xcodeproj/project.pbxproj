@@ -15,6 +15,9 @@
 		D83B8E6025131F44004F81B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D83B8E5E25131F44004F81B6 /* LaunchScreen.storyboard */; };
 		D83B8E6B25131F44004F81B6 /* SimbaBirthdayDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83B8E6A25131F44004F81B6 /* SimbaBirthdayDemoTests.swift */; };
 		D83B8E7625131F44004F81B6 /* SimbaBirthdayDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83B8E7525131F44004F81B6 /* SimbaBirthdayDemoUITests.swift */; };
+		D83B8E8925132AE3004F81B6 /* CustomDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83B8E8825132AE3004F81B6 /* CustomDate.swift */; };
+		D83B8E8B25132C36004F81B6 /* Characters.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83B8E8A25132C36004F81B6 /* Characters.swift */; };
+		D83B8E8D25132E9C004F81B6 /* BirthdayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83B8E8C25132E9C004F81B6 /* BirthdayViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		D83B8E7125131F44004F81B6 /* SimbaBirthdayDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimbaBirthdayDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D83B8E7525131F44004F81B6 /* SimbaBirthdayDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimbaBirthdayDemoUITests.swift; sourceTree = "<group>"; };
 		D83B8E7725131F44004F81B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D83B8E8825132AE3004F81B6 /* CustomDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDate.swift; sourceTree = "<group>"; };
+		D83B8E8A25132C36004F81B6 /* Characters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Characters.swift; sourceTree = "<group>"; };
+		D83B8E8C25132E9C004F81B6 /* BirthdayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +105,9 @@
 		D83B8E5125131F41004F81B6 /* SimbaBirthdayDemo */ = {
 			isa = PBXGroup;
 			children = (
+				D83B8E8525131FBF004F81B6 /* ViewModel */,
+				D83B8E8725131FD2004F81B6 /* Model */,
 				D83B8E5225131F41004F81B6 /* AppDelegate.swift */,
-				D83B8E5425131F41004F81B6 /* ViewController.swift */,
-				D83B8E5625131F41004F81B6 /* Main.storyboard */,
 				D83B8E5C25131F44004F81B6 /* Assets.xcassets */,
 				D83B8E5E25131F44004F81B6 /* LaunchScreen.storyboard */,
 				D83B8E6125131F44004F81B6 /* Info.plist */,
@@ -126,6 +132,33 @@
 				D83B8E7725131F44004F81B6 /* Info.plist */,
 			);
 			path = SimbaBirthdayDemoUITests;
+			sourceTree = "<group>";
+		};
+		D83B8E8525131FBF004F81B6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D83B8E5425131F41004F81B6 /* ViewController.swift */,
+				D83B8E8C25132E9C004F81B6 /* BirthdayViewModel.swift */,
+				D83B8E8625131FCC004F81B6 /* View */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D83B8E8625131FCC004F81B6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D83B8E5625131F41004F81B6 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D83B8E8725131FD2004F81B6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D83B8E8825132AE3004F81B6 /* CustomDate.swift */,
+				D83B8E8A25132C36004F81B6 /* Characters.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +292,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D83B8E8925132AE3004F81B6 /* CustomDate.swift in Sources */,
 				D83B8E5B25131F41004F81B6 /* SimbaBirthdayDemo.xcdatamodeld in Sources */,
 				D83B8E5525131F41004F81B6 /* ViewController.swift in Sources */,
+				D83B8E8D25132E9C004F81B6 /* BirthdayViewModel.swift in Sources */,
 				D83B8E5325131F41004F81B6 /* AppDelegate.swift in Sources */,
+				D83B8E8B25132C36004F81B6 /* Characters.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

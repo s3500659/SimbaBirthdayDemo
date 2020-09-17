@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SimbaBirthdayDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="752" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RGG-Ig-0Zs">
+                                <rect key="frame" x="16" y="518" width="284" height="30"/>
+                                <state key="normal" title="Change Image"/>
+                                <connections>
+                                    <action selector="btnChangeImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FdR-i6-FfX"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="simba_1" translatesAutoresizingMaskIntoConstraints="NO" id="e0K-ja-JDh">
+                                <rect key="frame" x="20" y="65" width="280" height="207"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7VR-lE-zDu">
+                                <rect key="frame" x="20" y="297" width="280" height="38.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" red="1" green="0.2198151461" blue="0.022249263290000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7VR-lE-zDu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="79d-4K-hrd"/>
+                            <constraint firstItem="7VR-lE-zDu" firstAttribute="top" secondItem="e0K-ja-JDh" secondAttribute="bottom" constant="25" id="E0d-jl-4g6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="RGG-Ig-0Zs" secondAttribute="bottom" constant="20" id="Mcw-y3-fEI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RGG-Ig-0Zs" secondAttribute="trailing" constant="20" id="ROv-gK-K5T"/>
+                            <constraint firstItem="e0K-ja-JDh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="45" id="WOs-cU-2IF"/>
+                            <constraint firstItem="RGG-Ig-0Zs" firstAttribute="top" relation="greaterThanOrEqual" secondItem="7VR-lE-zDu" secondAttribute="bottom" constant="10" id="bja-P7-3wU"/>
+                            <constraint firstItem="RGG-Ig-0Zs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="by8-V0-5zD"/>
+                            <constraint firstItem="e0K-ja-JDh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="jpD-Kf-ocK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="e0K-ja-JDh" secondAttribute="trailing" constant="20" id="tMK-EN-AZk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7VR-lE-zDu" secondAttribute="trailing" constant="20" id="wF3-2T-aji"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="currentImage" destination="e0K-ja-JDh" id="WDJ-Ig-2Zh"/>
+                        <outlet property="date" destination="7VR-lE-zDu" id="Gms-Mk-L5Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.25" y="117.25352112676056"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="simba_1" width="244" height="207"/>
+    </resources>
+</document>
